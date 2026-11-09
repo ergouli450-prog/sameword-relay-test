@@ -1,12 +1,3 @@
 FROM emqx/nanomq:0.25.6
-ENV NANOMQ_WEBSOCKET_ENABLE=true \
-    NANOMQ_ALLOW_ANONYMOUS=true \
-    NANOMQ_WEBSOCKET_URL=nmq-ws://0.0.0.0:3000/mqtt \
-    PORT=3000
+COPY nanomq.conf /usr/local/nanomq/nanomq.conf
 EXPOSE 3000
-
-
-
-
-
-
