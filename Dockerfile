@@ -1,0 +1,12 @@
+FROM emqx/nanomq:0.25.6
+ENV NANOMQ_WEBSOCKET_ENABLE=true \
+    NANOMQ_ALLOW_ANONYMOUS=true \
+    NANOMQ_WEBSOCKET_URL=nmq-ws://0.0.0.0:8083/mqtt \
+    PORT=8083
+EXPOSE 8083
+
+
+
+
+
+
